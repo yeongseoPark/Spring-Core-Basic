@@ -10,6 +10,7 @@ class ApplicationContextInfoTest {
 
     AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
     /* 스프링 컨테이너인 ApplicationContext 인터페이스의 구현체인 AnnotationConfigApplicationContext
+    이는 AnnotationConfig를 설정 정보로 사용하는 ApplicationContext
     getBeanDefinition함수는 AliasRegistry 인터페이스를 상속받으며, ApplicationContext와는 연관이 없다
     그래서 getBeanDefinition 을 ApplicationContext 타입으로 사용할 수는 없다
     반면 클라이언트인 AnnotationConfigApplicationContext는 계층 구조를 통해 , 여러 인터페이스에 선언된 메서드를 가져와 사용 가능
