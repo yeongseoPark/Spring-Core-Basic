@@ -18,7 +18,6 @@ public class AutowiredTest {
 
     static class TestBean {
         /* Member는 스프링 빈이 아니다! */
-
         @Autowired(required = false) // required가 false가 아니면 빈에 Member가 없기에 오류가 난다
         // required가 false이면, 의존관계가 없을 시 메서드 자체가 아예 호출이 되지 않는다.
         public void setNoBean1(Member noBean1) {
